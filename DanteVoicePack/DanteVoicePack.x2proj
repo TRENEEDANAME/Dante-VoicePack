@@ -7,7 +7,14 @@
     <SteamPublishID>0</SteamPublishID>
     <AssemblyName>DanteVoicePack</AssemblyName>
     <RootNamespace>DanteVoicePack</RootNamespace>
+    <ProjectGuid>{fc1f027f-c5a1-4b49-b1cb-52f0c09cf9e4}</ProjectGuid>
   </PropertyGroup>
+  <PropertyGroup>
+    <SolutionRoot>$(MSBuildProjectDirectory)\..\</SolutionRoot>
+    <ScriptsDir>$(SolutionRoot).scripts\</ScriptsDir>
+    <BuildCommonRoot>$(ScriptsDir)X2ModBuildCommon\</BuildCommonRoot>
+  </PropertyGroup>
+  <Import Project="$(BuildCommonRoot)XCOM2.targets" />
   <ItemGroup>
     <Folder Include="Config\" />
     <Folder Include="Localization\" />
@@ -15,8 +22,7 @@
     <Folder Include="Src\" />
     <Folder Include="Src\DanteVoicePack\" />
     <Folder Include="Src\DanteVoicePack\Classes\" />
-  </ItemGroup>
-  <ItemGroup>
+    <Folder Include="Content\" />
     <Content Include="Config\XcomContent.ini">
       <SubType>Content</SubType>
     </Content>
@@ -35,6 +41,6 @@
     <Content Include="Src\DanteVoicePack\Classes\X2DownloadableContentInfo_DanteVoicePack.uc">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="PublishedFileId.ID" />
   </ItemGroup>
-  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
 </Project>
