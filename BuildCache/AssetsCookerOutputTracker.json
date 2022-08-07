@@ -1,0 +1,15 @@
+{
+    "tfcFiles":  [
+
+                 ],
+    "sfPackages":  [
+                       {
+                           "fullFileName":  "Dante_Voice_Pack_No_Radio_Effect_SF.upk",
+                           "lastUpdatedUtc":  637955042830885355
+                       },
+                       {
+                           "fullFileName":  "Dante_Voice_Pack_Radio_Effect_SF.upk",
+                           "lastUpdatedUtc":  637955042848399364
+                       }
+                   ]
+}

@@ -7,7 +7,7 @@
     <SteamPublishID>0</SteamPublishID>
     <AssemblyName>DanteVoicePack</AssemblyName>
     <RootNamespace>DanteVoicePack</RootNamespace>
-    <ProjectGuid>{fc1f027f-c5a1-4b49-b1cb-52f0c09cf9e4}</ProjectGuid>
+    <ProjectGuid>{1d4e09cd-827c-4264-b55a-05cba5a8a2fb}</ProjectGuid>
   </PropertyGroup>
   <PropertyGroup>
     <SolutionRoot>$(MSBuildProjectDirectory)\..\</SolutionRoot>
@@ -19,14 +19,22 @@
     <Folder Include="Config\" />
     <Folder Include="Localization\" />
     <Folder Include="Content" />
+    <Folder Include="ContentForCook" />
     <Folder Include="Src\" />
     <Folder Include="Src\DanteVoicePack\" />
     <Folder Include="Src\DanteVoicePack\Classes\" />
     <Folder Include="Content\" />
+    <Folder Include="ContentForCook\" />
     <Content Include="Config\XcomContent.ini">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Content\Dante_Voice_Pack_Radio_Effect.upk">
+    <Content Include="ContentForCook\Dante_Voice_Pack_No_Radio_Effect.upk">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ContentForCook\Dante_Voice_Pack_Radio_Effect.upk">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ContentOptions.json">
       <SubType>Content</SubType>
     </Content>
     <Content Include="ReadMe.txt" />
@@ -42,5 +50,6 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="PublishedFileId.ID" />
+    <Content Include="Src\DanteVoicePack\Classes\Dante_DMC_NoRadio_VoicePack.uc" />
   </ItemGroup>
 </Project>
